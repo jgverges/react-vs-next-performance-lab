@@ -16,6 +16,11 @@
 *.sublime-project
 
 # OS
+vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
 .DS_Store
 Thumbs.db
+
 .history
