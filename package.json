@@ -1,0 +1,15 @@
+{
+  "name": "react-vs-next-performance-lab",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:react-normal": "cd frontend-react/normal && npm run dev",
+    "dev:react-optimized": "cd frontend-react/optimizado && npm run dev",
+    "dev:next-normal": "cd frontend-next/normal && npm run dev",
+    "dev:next-optimized": "cd frontend-next/optimized && npm run dev",
+    "dev:all": "concurrently \"npm run dev:react-normal\" \"npm run dev:react-optimized\" \"npm run dev:next-normal\" \"npm run dev:next-optimized\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
