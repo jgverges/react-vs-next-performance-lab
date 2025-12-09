@@ -1,26 +1,37 @@
-# Node modules
-**/node_modules
-**/dist
-**/.next
-**/out
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Logs
-**/npm-debug.log*
-**/yarn-debug.log*
-**/yarn-error.log*
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# IDEs
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
+# testing
+/coverage
 
-# OS
-vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-Thumbs.db
+*.pem
 
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 .history
