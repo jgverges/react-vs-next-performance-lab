@@ -1,8 +1,184 @@
 {
-    "hotels": [
-        {
-            "id": 1,
-            "name": "hotel"
-        }
-    ]
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Hotel Aurora",
+      "location": "Barcelona",
+      "rating": 4.5,
+      "price": 120,
+      "image": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?q=80&w=2049&auto=format&fit=crop",
+      "description": "Modern hotel with rooftop views in the heart of the city."
+    },
+    {
+      "id": 2,
+      "name": "Urban Stay Hotel",
+      "location": "Madrid",
+      "rating": 4.0,
+      "price": 110,
+      "image": "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2049&auto=format&fit=crop",
+      "description": "Comfortable and central hotel with easy access to attractions."
+    },
+    {
+      "id": 3,
+      "name": "Urban Oasis",
+      "location": "New York City, NY",
+      "rating": 4.7,
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2049&auto=format&fit=crop",
+      "description": "Modern hotel in the heart of the city."
+    },
+    {
+      "id": 4,
+      "name": "Tropical Escape",
+      "location": "Bali, Indonesia",
+      "rating": 4.9,
+      "price": 350,
+      "image": "https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=2049&auto=format&fit=crop",
+      "description": "Resort surrounded by lush tropical gardens."
+    },
+    {
+      "id": 5,
+      "name": "Desert Mirage",
+      "location": "Dubai, UAE",
+      "rating": 4.5,
+      "price": 400,
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2049&auto=format&fit=crop",
+      "description": "Luxury desert resort with stunning architecture."
+    },
+    {
+      "id": 6,
+      "name": "Mountain Retreat",
+      "location": "Swiss Alps, Switzerland",
+      "rating": 4.8,
+      "price": 300,
+      "image": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=2049&auto=format&fit=crop",
+      "description": "Charming chalet hotel with breathtaking mountain views."
+    },
+    {
+      "id": 7,
+      "name": "Seaside Paradise",
+      "location": "Malibu, USA",
+      "rating": 4.6,
+      "price": 220,
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2049&auto=format&fit=crop",
+      "description": "Beachfront hotel with stunning ocean views."
+    },
+    {
+      "id": 8,
+      "name": "City Central Hotel",
+      "location": "London, UK",
+      "rating": 4.3,
+      "price": 180,
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2049&auto=format&fit=crop",
+      "description": "Convenient hotel in the heart of London."
+    },
+    {
+      "id": 9,
+      "name": "Cozy Inn",
+      "location": "Prague, Czech Republic",
+      "rating": 4.2,
+      "price": 100,
+      "image": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?q=80&w=2049&auto=format&fit=crop",
+      "description": "Small and charming inn perfect for travelers."
+    },
+    {
+      "id": 10,
+      "name": "Lakeside Hotel",
+      "location": "Lake Como, Italy",
+      "rating": 4.7,
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=2049&auto=format&fit=crop",
+      "description": "Hotel with stunning views of Lake Como."
+    },
+    {
+      "id": 11,
+      "name": "Historic Palace",
+      "location": "Rome, Italy",
+      "rating": 4.8,
+      "price": 280,
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2049&auto=format&fit=crop",
+      "description": "Luxury palace hotel in the historical center."
+    },
+    {
+      "id": 12,
+      "name": "Urban Comfort",
+      "location": "Berlin, Germany",
+      "rating": 4.4,
+      "price": 160,
+      "image": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=2049&auto=format&fit=crop",
+      "description": "Modern hotel in Berlin's city center."
+    },
+    {
+      "id": 13,
+      "name": "Island Escape",
+      "location": "Santorini, Greece",
+      "rating": 4.9,
+      "price": 320,
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2049&auto=format&fit=crop",
+      "description": "Romantic hotel with spectacular island views."
+    },
+    {
+      "id": 14,
+      "name": "Countryside Lodge",
+      "location": "Tuscany, Italy",
+      "rating": 4.5,
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?q=80&w=2049&auto=format&fit=crop",
+      "description": "Rustic lodge surrounded by vineyards."
+    },
+    {
+      "id": 15,
+      "name": "Skyline Suites",
+      "location": "Tokyo, Japan",
+      "rating": 4.6,
+      "price": 230,
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2049&auto=format&fit=crop",
+      "description": "Luxury suites with skyline views."
+    },
+    {
+      "id": 16,
+      "name": "Downtown Retreat",
+      "location": "Chicago, USA",
+      "rating": 4.3,
+      "price": 190,
+      "image": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=2049&auto=format&fit=crop",
+      "description": "Comfortable hotel in downtown Chicago."
+    },
+    {
+      "id": 17,
+      "name": "Seaside Haven",
+      "location": "Nice, France",
+      "rating": 4.7,
+      "price": 210,
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2049&auto=format&fit=crop",
+      "description": "Relaxing hotel by the Mediterranean sea."
+    },
+    {
+      "id": 18,
+      "name": "Boutique Hotel",
+      "location": "Lisbon, Portugal",
+      "rating": 4.4,
+      "price": 180,
+      "image": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?q=80&w=2049&auto=format&fit=crop",
+      "description": "Chic boutique hotel in the city center."
+    },
+    {
+      "id": 19,
+      "name": "Eco Lodge",
+      "location": "Costa Rica",
+      "rating": 4.8,
+      "price": 220,
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2049&auto=format&fit=crop",
+      "description": "Sustainable hotel in the rainforest."
+    },
+    {
+      "id": 20,
+      "name": "Harbor View Hotel",
+      "location": "San Francisco, USA",
+      "rating": 4.5,
+      "price": 240,
+      "image": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=2049&auto=format&fit=crop",
+      "description": "Hotel with panoramic views of the bay."
+    }
+  ]
 }

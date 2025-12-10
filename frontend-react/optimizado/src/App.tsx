@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// optimizado/src/App.tsx
+import { useHotels } from "./hooks/useHotels";
+import { Link } from "react-router-dom";
+import "./App.css";
+import { getOptimizedImage } from "./utils/optimizationHelpers";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { data: hotels, isLoading, error } = useHotels();
+
+  const width = window.innerWidth < 600 ? 350 : 800;
+
+  if (error) return <div>Error...</div>;
+  if (isLoading) return <div>Loading...</div>;
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main className="container">
+      <h1>eBooking (React optimized)</h1>
+      <div className="hotels-grid">
+        {hotels?.map((hotel, index) => (
+          <Link to={`/hotel/${hotel.id}`} key={hotel.id} className="hotel-card">
+            <img
+              src={getOptimizedImage(hotel.image,width)}
+              alt={hotel.name}
+              style={{ width: "100%", height: "auto" }}
+              fetchPriority={index === 0 ? "high" : "auto"}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+            />
+            <h3>{hotel.name}</h3>
+            <p>{hotel.location}</p>
+            <p>${hotel?.price ? hotel.price.toFixed(2) : ""}</p>
+          </Link>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
